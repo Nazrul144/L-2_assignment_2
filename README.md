@@ -32,6 +32,7 @@ CREATE TABLE students (
     student_id SERIAL PRIMARY KEY,
     name VARCHAR(50)
 );
+```
 
 ### ফরেন কি (Foreign Key):
 
@@ -45,6 +46,7 @@ CREATE TABLE enrollments (
     student_id INT REFERENCES students(student_id),
     course_name VARCHAR(100)
 );
+```
 
 এই উদাহরণে, `enrollments` টেবিলের `student_id` একটি ফরেন কি, যা `students` টেবিলের `student_id` প্রাইমারি কিকে রেফার করে। এর ফলে শুধুমাত্র বৈধ (অর্থাৎ `students` টেবিলে আগে থেকে থাকা) `student_id`-গুলোকেই `enrollments` টেবিলে যোগ করা যাবে। এটি ডাটাবেসে ডেটার সঠিকতা ও সংযুক্তির সুরক্ষা নিশ্চিত করে।
 
