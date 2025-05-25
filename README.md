@@ -16,7 +16,7 @@
 
 সব মিলিয়ে, PostgreSQL-এ স্কিমা ব্যবহারের ফলে ডাটাবেসের গঠন আরও সুসংগঠিত হয়, নিরাপত্তা বৃদ্ধি পায় এবং রক্ষণাবেক্ষণ সহজ হয়।
 
-## 3. Explain the Primary Key and Foreign Key concepts in PostgreSQL?
+## 3. Explain the Primary Key and Foreign Key concepts in PostgreSQL
 
 **উত্তর:**  
 আমরা জানি যে প্রাইমারি কি (Primary Key) এবং ফরেন কি (Foreign Key) একটি রিলেশনাল ডাটাবেস সিস্টেমের অত্যন্ত গুরুত্বপূর্ণ ধারণা। PostgreSQL-এ এই দুটি কী ব্যবহার করা হয় ডাটার সঠিকতা (data integrity) বজায় রাখতে এবং টেবিলগুলোর মধ্যে সম্পর্ক নির্ধারণ করতে।
@@ -73,7 +73,7 @@ VALUES ('Nazrul', 'Nazrul');
 • fixed_name ভ্যালুটি 'Nazrul    ' হিসেবে সংরক্ষণ করবে (অতিরিক্ত ৪টি স্পেসসহ)।  
 • variable_name ভ্যালুটি 'Nazrul' হিসেবেই সংরক্ষণ করবে (কোনো অতিরিক্ত স্পেস ছাড়াই)।
 
-## 5. Explain the purpose of the WHERE clause in a SELECT statement?
+## 5. Explain the purpose of the WHERE clause in a SELECT statement
 
 উত্তর: WHERE ক্লজ SELECT স্টেটমেন্টের সঙ্গে ব্যবহার করা হয় ডাটাবেস থেকে ডেটা নির্বাচনের সময় নির্দিষ্ট শর্ত আরোপ করার জন্য। এর সাহায্যে আমরা যেসব রেকর্ড দরকার, শুধুমাত্র সেগুলোই বের করতে পারি। যদি WHERE না দিয়ে সব ডেটা আনা হয়, তাহলে অনেক অপ্রয়োজনীয় তথ্যও চলে আসতে পারে, যা বিশ্লেষণ করা কঠিন হয়ে পড়ে।
 
