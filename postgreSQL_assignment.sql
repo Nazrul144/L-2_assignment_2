@@ -66,11 +66,6 @@ INSERT INTO sightings (sighting_id, species_id, ranger_id, location, sighting_ti
 (8, 7, 7, 'Marshland', '2024-06-07 17:45:00', 'Tracks found in mud');
 
 
-SELECT * FROM rangers;
-SELECT * FROM species;
-SELECT * FROM sightings;
-
-
 --Problem 1
 INSERT INTO rangers (name, region)
 VALUES ('Derek Fox', 'Coastal Plains');
@@ -91,7 +86,8 @@ WHERE location ILIKE '%Pass%';
 SELECT rangers.name, COUNT(sightings.sighting_id) AS total_sightings
 FROM rangers
 LEFT JOIN sightings ON rangers.ranger_id = sightings.ranger_id
-GROUP BY rangers.name;
+GROUP BY rangers.name
+
 
 
 --Problem 5
